@@ -61,7 +61,7 @@ export default function App() {
             {tela({
                nome: 'Tecnicas',
                icone: 'extension-puzzle-outline',
-               titulo: 'Tecnicas Terapeuticas',
+               titulo: 'Técnicas Terapêuticas',
                componente: tecnicas,
             })}
 
