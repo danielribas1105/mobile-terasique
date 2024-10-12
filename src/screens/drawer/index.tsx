@@ -9,6 +9,8 @@ import tecnicas from './tec-terapeuticas'
 import libras from './libras'
 import termos from './privacidade-termos'
 import sair from './sair'
+import profissionais from './profissionais'
+import relatorios from './relatorios'
 
 export default function App() {
 
@@ -43,42 +45,48 @@ export default function App() {
                titulo: 'Tela Inicial',
                componente: inicio,
             })}
-
             {tela({
-               nome: 'Sobre',
-               icone: 'help-circle-outline',
-               titulo: 'Sobre Nós',
-               componente: sobre,
-            })}
-
-            {tela({
-               nome: 'Diario',
-               icone: 'person-outline',
+               nome: 'Diário Pessoal',
+               icone: 'document-text-outline',
                titulo: 'Diário Pessoal',
                componente: diario,
             })}
-
+            {tela({
+               nome: 'Relatórios',
+               icone: 'bar-chart-outline',
+               titulo: 'Relatórios',
+               componente: relatorios,
+            })}
             {tela({
                nome: 'Tecnicas',
                icone: 'extension-puzzle-outline',
                titulo: 'Técnicas Terapêuticas',
                componente: tecnicas,
             })}
-
             {tela({
                nome: 'Libras',
                icone: 'hand-left-outline',
                titulo: 'Libras',
                componente: libras,
             })}
-
+            {tela({
+               nome: 'Profissionais',
+               icone: 'people-outline',
+               titulo: 'Nossos Profissionais',
+               componente: profissionais,
+            })}
+            {tela({
+               nome: 'Sobre',
+               icone: 'help-circle-outline',
+               titulo: 'Sobre Nós',
+               componente: sobre,
+            })}
             {tela({
                nome: 'Termos',
                icone: 'document-text-outline',
                titulo: 'Privacidade e Termos',
                componente: termos,
             })}
-
             {tela({
                nome: 'Sair',
                icone: 'log-out-outline',
