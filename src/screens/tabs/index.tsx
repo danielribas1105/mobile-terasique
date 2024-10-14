@@ -6,7 +6,7 @@ import Conversas from './conversas'
 import Usuario from './usuario'
 import Relatorios from './relatorios'
 
-export default function Tabs() {
+export default function TabsScreen() {
    const Tabs = createBottomTabNavigator()
    return (
       <Tabs.Navigator

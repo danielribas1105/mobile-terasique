@@ -11,9 +11,8 @@ import termos from './privacidade-termos'
 import sair from './sair'
 import profissionais from './profissionais'
 import relatorios from './relatorios'
-import Tabs from '../tabs/index'
 
-export default function App() {
+export default function AppOld() {
 
    const Drawer = createDrawerNavigator()
 
@@ -93,12 +92,6 @@ export default function App() {
                icone: 'log-out-outline',
                titulo: 'Sair',
                componente: sair,
-            })}
-            {tela({
-               nome: 'Tabs',
-               icone: 'log-out-outline',
-               titulo: 'Tabs',
-               componente: Tabs,
             })}
          </Drawer.Navigator>
       </NavigationContainer>
