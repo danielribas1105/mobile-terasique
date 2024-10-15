@@ -5,9 +5,11 @@ import Tarefas from './tarefas'
 import Conversas from './conversas'
 import Usuario from './usuario'
 import Relatorios from './relatorios'
+import DrawerMenu from '../drawer/drawer-menu'
 
 export default function TabsScreen() {
    const Tabs = createBottomTabNavigator()
+   
    return (
       <Tabs.Navigator
          screenOptions={{
@@ -15,8 +17,8 @@ export default function TabsScreen() {
          }}
       >
          <Tabs.Screen
-            name="Menu"
-            component={Menu}
+            name="Drawer"
+            component={DrawerMenu}
             options={{
                title: '',
                tabBarIcon: ({ focused }: any) => (
