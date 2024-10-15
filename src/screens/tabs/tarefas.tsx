@@ -1,10 +1,10 @@
 import { View, Image, StyleSheet, ImageBackground } from "react-native"
 
-export default function Relatorios() {
+export default function Tarefas() {
    return (
       <View style={styles.container}>
          <ImageBackground
-            source={require('@/assets/images/screen-relatorios.png')}
+            source={require('@/assets/images/screen-tarefas.png')}
             style={styles.background}
          />
       </View>

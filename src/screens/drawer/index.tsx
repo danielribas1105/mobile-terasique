@@ -10,9 +10,8 @@ import libras from './libras'
 import termos from './privacidade-termos'
 import sair from './sair'
 import profissionais from './profissionais'
-import relatorios from './relatorios'
 
-export default function AppOld() {
+export default function DrawerMenu() {
 
    const Drawer = createDrawerNavigator()
 
@@ -50,12 +49,6 @@ export default function AppOld() {
                icone: 'document-text-outline',
                titulo: 'Diário Pessoal',
                componente: diario,
-            })}
-            {tela({
-               nome: 'Relatórios',
-               icone: 'bar-chart-outline',
-               titulo: 'Relatórios',
-               componente: relatorios,
             })}
             {tela({
                nome: 'Tecnicas',

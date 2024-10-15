@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
 import Menu from './menu'
-import Agenda from './agenda'
+import Tarefas from './tarefas'
 import Conversas from './conversas'
 import Usuario from './usuario'
 import Relatorios from './relatorios'
@@ -18,26 +18,26 @@ export default function TabsScreen() {
             name="Menu"
             component={Menu}
             options={{
-               title: 'Menu',
+               title: '',
                tabBarIcon: ({ focused }: any) => (
                   <Ionicons
                      name="menu-outline"
-                     size={20}
-                     color={focused ? '#1C80FF' : '#000'}
+                     size={30}
+                     color={focused ? '#f13e56' : '#929292'}
                   />
                ),
             }}
          />
          <Tabs.Screen
-            name="Agenda"
-            component={Agenda}
+            name="Tarefas"
+            component={Tarefas}
             options={{
-               title: 'Agenda',
+               title: '',
                tabBarIcon: ({ focused }: any) => (
                   <Ionicons
                      name="calendar-outline"
-                     size={20}
-                     color={focused ? '#1C80FF' : '#000'}
+                     size={30}
+                     color={focused ? '#f13e56' : '#929292'}
                   />
                ),
             }}
@@ -46,12 +46,12 @@ export default function TabsScreen() {
             name="Relatórios"
             component={Relatorios}
             options={{
-               title: 'Relatórios',
+               title: '',
                tabBarIcon: ({ focused }: any) => (
                   <Ionicons
                      name="happy-outline"
-                     size={20}
-                     color={focused ? '#1C80FF' : '#000'}
+                     size={30}
+                     color={focused ? '#f13e56' : '#929292'}
                   />
                ),
             }}
@@ -60,12 +60,12 @@ export default function TabsScreen() {
             name="Conversas"
             component={Conversas}
             options={{
-               title: 'Canais de Conversas',
+               title: '',
                tabBarIcon: ({ focused }: any) => (
                   <Ionicons
                      name="chatbubbles-outline"
-                     size={20}
-                     color={focused ? '#1C80FF' : '#000'}
+                     size={30}
+                     color={focused ? '#f13e56' : '#929292'}
                   />
                ),
             }}
@@ -74,12 +74,12 @@ export default function TabsScreen() {
             name="Usuário"
             component={Usuario}
             options={{
-               title: 'Usuário',
+               title: '',
                tabBarIcon: ({ focused }: any) => (
                   <Ionicons
                      name="person-outline"
-                     size={20}
-                     color={focused ? '#1C80FF' : '#000'}
+                     size={30}
+                     color={focused ? '#f13e56' : '#929292'}
                   />
                ),
             }}
