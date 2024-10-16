@@ -14,6 +14,10 @@ export default function Inicio() {
             style={styles.logo}
          />
          <Text style={styles.subtitulo}>Anamnese Individual</Text>
+         <View style={styles.footer}>
+            <Text>Desenvolvido por DRCode - Developer</Text>
+            <Text>@2024 - Todos os diretos reservados</Text>
+         </View>
       </View>
    )
 }
@@ -24,7 +28,7 @@ const styles = StyleSheet.create({
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      paddingTop: 20,
+      paddingTop: 60,
       backgroundColor: '#ffdca6'
    },
    titulo: {
@@ -40,5 +44,12 @@ const styles = StyleSheet.create({
    },
    subtitulo: {
       fontSize: 30
+   },
+   footer: {
+      flex: 1,
+      flexDirection: 'column',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      marginBottom: 20
    }
 })
