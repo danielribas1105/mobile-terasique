@@ -22,6 +22,7 @@ export default function StackMenu({ navigation }: any) {
                 options={{
                     title: 'Página 1',
                     headerShown: true,
+                    headerLeft: () => null,
                     headerRight: () => (
                         <Button
                             onPress={() => navigation.navigate('UsuarioPage2')}
