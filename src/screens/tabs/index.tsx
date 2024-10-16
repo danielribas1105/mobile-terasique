@@ -23,7 +23,7 @@ export default function TabsScreen() {
                title: '',
                tabBarIcon: ({ focused }: any) => (
                   <Ionicons
-                     name="menu-outline"
+                     name="home-outline"
                      size={30}
                      color={focused ? '#f13e56' : '#929292'}
                   />

@@ -7,9 +7,6 @@ export default function DiarioPessoal() {
 
    return (
       <View style={styles.container}>
-         <View style={styles.tituloBg}>
-            <Text style={styles.titulo}>Diário Pessoal</Text>
-         </View>
          <TextInput
             style={styles.textArea}
             value={text}

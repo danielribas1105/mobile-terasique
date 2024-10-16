@@ -24,11 +24,23 @@ export default function DrawerMenu() {
                   <Ionicons
                      name={props.icone as any}
                      size={24}
-                     color={focused ? '#1c80ff' : '#000'}
+                     color={focused ? '#f13e56' : '#929292'}
                   />
                ),
                drawerLabel: props.titulo,
                title: props.titulo,
+               drawerStyle: {
+                  backgroundColor: '#f0bb69',
+                  width: 270
+               },
+               drawerItemStyle: {
+                  backgroundColor: '#fff',
+                  borderRadius: 10
+               },
+               drawerLabelStyle: {
+                  marginLeft: -20,
+                  color: '#929292'
+               }
             }}
          />
       )
@@ -37,13 +49,15 @@ export default function DrawerMenu() {
    return (
       <Drawer.Navigator 
          screenOptions={{
-         headerShown: false,
-         drawerType: 'slide'
+         headerShown: true,
+         headerStyle: {
+            backgroundColor: '#f0bb69'
+         }
          }}>
          {tela({
             nome: 'Inicio',
             icone: 'home-outline',
-            titulo: 'Tela Inicial',
+            titulo: 'Menu Principal',
             componente: inicio,
          })}
          {tela({

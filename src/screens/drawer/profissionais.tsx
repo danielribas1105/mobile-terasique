@@ -6,7 +6,7 @@ export default function Profissionais() {
    return (
       <View style={styles.container}>
          <View style={styles.tituloBg}>
-            <Text style={styles.titulo}>Nossos Profissionais</Text>
+            <Text style={styles.titulo}>Conheça nossa equipe</Text>
          </View>
          <ScrollView>
             <View  style={styles.viewScroll}>

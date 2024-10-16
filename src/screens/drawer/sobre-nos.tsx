@@ -4,7 +4,7 @@ export default function SobreNos() {
    return (
       <View style={styles.container}>
          <View style={styles.tituloBg}>
-            <Text style={styles.titulo}>Sobre Nós</Text>
+            <Text style={styles.titulo}>Conheça a Terasique</Text>
          </View>
          <Text style={styles.textoSobreNos}>{sobreNos}</Text>
       </View>
