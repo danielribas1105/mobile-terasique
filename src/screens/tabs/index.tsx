@@ -6,6 +6,7 @@ import Conversas from './conversas'
 import Usuario from './usuario'
 import Relatorios from './relatorios'
 import DrawerMenu from '../drawer/drawer-menu'
+import StackMenu from '../stack/stack-menu'
 
 export default function TabsScreen() {
    const Tabs = createBottomTabNavigator()
@@ -73,8 +74,8 @@ export default function TabsScreen() {
             }}
          />
          <Tabs.Screen
-            name="Usuário"
-            component={Usuario}
+            name="Stack"
+            component={StackMenu}
             options={{
                title: '',
                tabBarIcon: ({ focused }: any) => (
