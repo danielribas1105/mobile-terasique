@@ -7,6 +7,9 @@ export default function DiarioPessoal() {
 
    return (
       <View style={styles.container}>
+         <View style={styles.tituloBg}>
+            <Text style={styles.titulo}>Diário Pessoal</Text>
+         </View>
          <TextInput
             style={styles.textArea}
             value={text}
@@ -46,7 +49,7 @@ const styles = StyleSheet.create({
    },
    textArea: {
       width: 300,
-      height: 500,
+      height: 450,
       borderColor: 'gray',
       backgroundColor: '#fff',
       borderWidth: 1,
@@ -57,7 +60,7 @@ const styles = StyleSheet.create({
    },
    footerText: {
       fontSize: 20,
-      marginTop: 20,
+      marginTop: 10,
       marginBottom: 10
    }
 })
