@@ -52,12 +52,16 @@ export default function DrawerMenu() {
          headerShown: true,
          headerStyle: {
             backgroundColor: '#f0bb69'
-         }
+         },
+         headerTitle: 'Menu Principal',
+         headerTitleStyle: {
+            marginLeft: -20
+         },
          }}>
          {tela({
             nome: 'Inicio',
             icone: 'home-outline',
-            titulo: 'Menu Principal',
+            titulo: 'Tela Inicial',
             componente: inicio,
          })}
          {tela({
