@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "mobile-terasique",
-    "slug": "mobile-terasique",
+    "slug": "terasique-anamnese",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.drcode.terasiqueanamnese"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.drcode.terasiqueanamnese"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3536e299-7bcc-4151-9f7f-6648d96ea5d9"
+      }
+    },
+    "owner": "danielribas1105"
   }
 }
